@@ -1,4 +1,5 @@
 import  'package:flutter/material.dart';
+import './DatePicker.dart';
 
 class BCHomePageSimple extends StatefulWidget {
   @override
@@ -6,20 +7,19 @@ class BCHomePageSimple extends StatefulWidget {
 }
  
 class _BCHomePageSimpleState extends State<BCHomePageSimple> {
+
+  // List<Widget> componentLists = [];
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
        home: new Scaffold(
          appBar: new AppBar(
-           title: const Text('店首页'),
+           title: const Text('常用工具'),
          ),
          body:new ListView(
            children: <Widget>[
-             // 轮播器
-
-             //一行功能列表
-
-             
+             new Text('时间操作'),
+             new DatePickerSimple()
            ],
          )
        ),
