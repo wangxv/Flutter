@@ -206,7 +206,7 @@ class _ClassSimpleState extends State<ClassSimple> {
         children: <Widget>[
           new UserAccountsDrawerHeader(
             accountName: new Text('张三'),
-            accountEmail: new Text('zhangsan@tuhu.cn'),
+            accountEmail: new Text('zhangsan@qq.cn'),
             currentAccountPicture: new CircleAvatar(
               backgroundImage: new AssetImage('images/img1.jpg'),
             ),

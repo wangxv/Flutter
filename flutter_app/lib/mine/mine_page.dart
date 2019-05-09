@@ -12,7 +12,7 @@ class MineSimple extends StatefulWidget {
 
 class _MineSimpleState extends State<MineSimple> {
   final String userName = '李四';
-  final String userEmail = 'lisi@tuhu.cn';
+  final String userEmail = 'lisi@qq.cn';
   final String avatar = 'images/img1.jpg';
   var currentPage = 3;
 

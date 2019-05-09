@@ -9,7 +9,6 @@ class VideoApp extends StatefulWidget {
 class _VideoAppState extends State<VideoApp> {
   VideoPlayerController _controller;
   bool _isPlaying = false;
-  // String url = 'https://img1.tuhu.org/videos/tech/video/liWW1-uAhFTSDjflF-dnayQH8Aox_360.mp4';
   String url = 'https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4';
 
   @override

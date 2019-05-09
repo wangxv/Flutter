@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './chart_page.dart';
 import './video_page.dart';
-import './video_dome.dart';
+// import './upload_page.dart';
 
 class LibrarySimple extends StatefulWidget {
   @override
@@ -11,8 +11,8 @@ class LibrarySimple extends StatefulWidget {
 class _LibrarySimpleState extends State<LibrarySimple> {
   List<Widget> _routeList = [
     new ChartSimple(),
-    new VideoSimple()
-    // new VideoApp()
+    new VideoSimple(),
+    // new UploadSImple()
     ];
 
   @override
@@ -43,11 +43,23 @@ class _LibrarySimpleState extends State<LibrarySimple> {
                     backgroundColor: Colors.white,
                     child: new Icon(Icons.slideshow ,color: Colors.greenAccent[400],),
                   ),
-                  title: Text('音频',style:new TextStyle(color: Colors.white)),
+                  title: Text('视频',style:new TextStyle(color: Colors.white)),
                   onTap: () {
-                    _goDetail(1, '音频');
+                    _goDetail(1, '视频');
                   }),
             ),
+            // Card(
+            //   color: Colors.purple,
+            //   child: ListTile(
+            //       leading: CircleAvatar(
+            //         backgroundColor: Colors.white,
+            //         child: new Icon(Icons.slideshow ,color: Colors.greenAccent[400],),
+            //       ),
+            //       title: Text('上传',style:new TextStyle(color: Colors.white)),
+            //       onTap: () {
+            //         _goDetail(2, '上传');
+            //       }),
+            // ),
           ],
         ),
       ),
