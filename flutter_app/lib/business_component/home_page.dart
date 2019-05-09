@@ -1,5 +1,6 @@
 import  'package:flutter/material.dart';
 import './DatePicker.dart';
+import './form_page.dart';
 
 class BCHomePageSimple extends StatefulWidget {
   @override
@@ -14,12 +15,14 @@ class _BCHomePageSimpleState extends State<BCHomePageSimple> {
     return new MaterialApp(
        home: new Scaffold(
          appBar: new AppBar(
-           title: const Text('常用工具'),
+           title: const Text('常用'),
          ),
          body:new ListView(
            children: <Widget>[
              new Text('时间操作'),
-             new DatePickerSimple()
+             new DatePickerSimple(),
+             new Text('表单操作'),
+             new FormSimple()
            ],
          )
        ),
