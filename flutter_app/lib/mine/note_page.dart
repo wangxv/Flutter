@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class NoteSimple extends StatefulWidget {
   @override
@@ -11,15 +11,15 @@ class _NoteSimpleState extends State<NoteSimple> {
   String title = '';
   String content = '';
 
-  Future _saveData(id, title, content) async {
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    preferences.setString(title, content);
+  // Future _saveData(id, title, content) async {
+  //   SharedPreferences preferences = await SharedPreferences.getInstance();
+  //   preferences.setString(title, content);
 
-    setState(() {
-      note.insert(0, {id: id, title: title, content: content});
-    });
-    print('存储$title 为:$content');
-  }
+  //   setState(() {
+  //     note.insert(0, {id: id, title: title, content: content});
+  //   });
+  //   print('存储$title 为:$content');
+  // }
 
   // Future _readData(title) async{
   //   SharedPreferences preferences = await SharedPreferences.getInstance();
