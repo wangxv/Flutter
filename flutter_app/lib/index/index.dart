@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 // import '../exercise/exercise_page.dart';
 import '../home/home_page.dart';
 import '../mine/mine_page.dart';
+import '../library_dome/library_page.dart';
 import '../business_component/home_page.dart';
 import 'navigation_icon.dart';
 
@@ -71,6 +72,11 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
         vsync: this,
       ),
       new NavigationIconView(
+        icon: new Icon(Icons.local_library),
+        title: new Text("常用库"),
+        vsync: this,
+      ),
+      new NavigationIconView(
         icon: new Icon(Icons.person),
         title: new Text("我的"),
         vsync: this,
@@ -91,6 +97,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       // new LayoutSimple()
       new HomeSimple(),
       new BCHomePageSimple(),
+      new LibrarySimple(),
       new MineSimple()
       ];
     _currentPage = _pageList[_currentIndex];
